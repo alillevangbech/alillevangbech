@@ -1,1 +1,41 @@
-README
+### How to run the program ###
+
+Save the three files to an empty folder and run them in the following order
+
+  - DataGeneratorSABR.py
+  - SABR_Create_NN.py
+  - CompareModel.py
+  
+### Quick description ###
+
+# DataGeneratorSABR.py
+
+- Creates a train and test data set - for the neural network to train on. 
+- The data gets saved to current directory of DataGeneratorSABR.py
+- it generates about 300000 data points, so it takes around 10 min.
+
+# SABR_Create_NN.py
+
+- Creates a neural network based on the data just mentioned above.
+- Neural network gets saved to current directory of SABR_Create_NN.py
+- It takes about an hour - depends on the number of iterations (epochs) or batch_size or number of neurons etc..
+
+# CompareModel.py
+
+- Creates three graphs which corresponds to McGhees graphs in page 15-16 of the paper.
+- For each parameter set, I generate the 10 implied vols from the neural network and use a cubic_spline to make the curve smooth.
+- The three graphs gets saved to current directory in a pdf file format
+
+### Results ###
+
+I've uploaded the results of SABR_Create_NN.py and CompareModel.py
+
+# The neural network
+  - NeuralNetwork.ckpt
+  
+# Compareable Smiles
+  - SABR_ParameterSet1.pdf
+  - SABR_ParameterSet2.pdf
+  - SABR_ParameterSet3.pdf
+
+The smiles is respectivly the smiles illustrated in page 15-16 in the McGhee paper.
