@@ -1,3 +1,4 @@
-Welcome to the github of Alexander Lillevang Bech
+Getting Started With Git and GitHub
+===================================
 
-This is mostly a collection of small projects throughout my time at the University of Copenhagen
+Explaining Git and GitHub. Forked from [Jaime Kosoy](https://github.com/jkosoy). The following commands below are to be run in the Terminal.App for Mac OSX or Linux. For a good overview on how to use the Terminal see [this tutorial](http://cli.learncodethehardway.org/book/). There is also a [desktop application](desktop application) for GitHub if you'd prefer to not use the Terminal.App.
