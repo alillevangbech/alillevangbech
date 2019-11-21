@@ -1,4 +1,4 @@
-# **ALEXANDER LILLEVANG BECH** #
+# **Github of Alexander Lillevang Bech** #
 This github repo represents a small number of projects I've been working on throughout my time at the University of Copenhagen. 
 
 Mainly, the projects include
