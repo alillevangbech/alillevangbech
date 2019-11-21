@@ -7,3 +7,5 @@ Mainly, the projects include
 3. My masters thesis code representing SABR. (SABR_Representation folder)
 
 Besides that, theres some toycode from my Applied Programming course.
+
+Almost all of the projects was meant as one-off projects, meaning that very little thought was given to reusability.
