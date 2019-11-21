@@ -1,7 +1,9 @@
-Github of Alexander Lillevang Bech
-===================================
+# **ALEXANDER LILLEVANG BECH** #
+This github repo represents a small number of projects I've been working on throughout my time at the University of Copenhagen. 
 
-This repository contains small projects I've been working on while studying at the University of Copenhagen. Mostly the projects are on-offs, meaning the code was tailored to a specific problem, and was not written with reusability in mind. 
+Mainly, the projects include
+1. Machine Learning (ML folder)
+2. Computational Finance (CompFin folder)
+3. My masters thesis code representing SABR. (SABR_Representation folder)
 
-The projects are divided into
-
+Besides that, theres some toycode from my Applied Programming course.
