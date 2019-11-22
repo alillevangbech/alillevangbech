@@ -18,6 +18,6 @@ For the R projects, using Rstudio is recommended to view graphs. All data needed
     
 3. **Project3 (Logistic Regression)**
 
-      Implentation of Logistic Regression on the IRIS dataset.
+      Implementation of Logistic Regression on the IRIS dataset.
 
 4. **Project4 (Principal component analysis)**
