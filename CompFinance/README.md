@@ -6,7 +6,7 @@ For my "Computational Finance" and "Continuous Time Finance" courses my professo
 
 1. **Project1**
 
-    A project for testing out building upon existing RNG (Randonm Number Generators) in the standard library. Furthermore, Black-Scholes pricing is included - both analytical and Monte-Carlo. Same goes for the Heston model.
+    A project for testing out building upon existing RNG (Random Number Generators) in the standard library. Furthermore, Black-Scholes pricing is included - both analytical and Monte-Carlo. Same goes for the Heston model.
 
 2. **Project2**
 
