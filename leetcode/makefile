@@ -1,9 +1,9 @@
 CC=g++
 CFLAGS=-I.
-DEPS = main.h
+DEPS = template.h
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-main: main.o main_fun.o 
-	$(CC) -o main main.o main_fun.o 
+main: template.o
+	$(CC) -o template template.o 
