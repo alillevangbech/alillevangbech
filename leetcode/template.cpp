@@ -3,8 +3,9 @@
 #include <string>
 #include <fstream>
 
-bool fexists (const std::string& name) {
-    ifstream f(name.c_str());
+bool fexists (const std::string& name)
+{
+    std::ifstream f(name.c_str());
     return f.good();
 }
 
@@ -28,14 +29,15 @@ int cStrLen(const char *s) {
 
 int main(int argc, const char* argv[])
 {	
-	std::string a,line,iPath,oPath;
-	argv[1] ? a.assign(argv[1],cStrLen(argv[1])) : a = "";
+	std::string id,new_flag,line,iPath,oPath,iMakePath,oMakePath;
+	argv[1] ? id.assign(argv[1],cStrLen(argv[1])) : id = "";
+	argv[2] ? new_flag.assign(argv[2],cStrLen(argv[2])) : new_flag = "";
 	
 	// Creating main program for leetcode problem
-	iPath = ExePath() + "\\template.txt";
+	iPath = ExePath() + "template\\template.txt";
 	oPath = ExePath() + "\\" + a + "_lc.cpp";
 	
-	if (fexists(oPath))
+	if (fexists(oPath) && )
 	{
 	std::ifstream iFile(iPath);
 	std::ofstream oFile(oPath, std::ios::out);
@@ -56,6 +58,34 @@ int main(int argc, const char* argv[])
 		iFile.close();
 	}
 	}
+	
+	/*
+	// Change makefile to fit current id
+	iMakePath = ExePath() + "\\template\\makefile.txt";
+	oMakePath = ExePath() + "\\makefile";
+	
+	std::ifstream iFile(iPath);
+	std::ofstream oFile(oPath, std::ios::out | std::ios::trunc);
+	
+	if (iFile.is_open() && oFile.is_open())
+	{
+		while (getline(iFile,line))
+		{
+			if (line.find("template") != std::string::npos)
+			{
+				line.pop_back();
+				oFile << line + " " + a + "\n";
+			}
+			else
+				oFile << line;
+		}
+		oFile.close();
+		iFile.close();
+	}
+	*/
+	
+	// Optional: Create easy way to upload to github
+	
 	
 	
 	
