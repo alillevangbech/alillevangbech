@@ -6,4 +6,4 @@ DEPS = template.h
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 main: template.o
-	$(CC) -o template template.o 
+	$(CC) -o template template.o
