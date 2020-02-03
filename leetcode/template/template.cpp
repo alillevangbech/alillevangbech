@@ -4,6 +4,16 @@
 #include <fstream>
 #include <stdio.h>
 #include <assert.h>
+#include <stdlib.h>
+
+std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {
+    size_t start_pos = 0;
+    while((start_pos = str.find(from, start_pos)) != std::string::npos) {
+        str.replace(start_pos, from.length(), to);
+        start_pos += to.length(); // Handles case where 'to' is a substring of 'from'
+    }
+    return str;
+}
 
 bool fexists (const std::string& name)
 {
@@ -21,7 +31,7 @@ std::string ExePath()
 
 std::string GoToParentFolder(const std::string& str)
 {
-	std::size_t found = str.find_last_of("/\\");
+	std::size_t found = str.find_last_of("\\/");
 	std::string new_str = str.substr(0,found);
 	return new_str;
 }
@@ -73,21 +83,41 @@ int main(int argc, const char* argv[])
 	
 	
 	// Change makefile to fit current id
-	iMakePath = ExePath() + "\\makefile.txt";
+	iMakePath = ExePath() + "\\makefile";
 	oMakePath = GoToParentFolder(ExePath()) + "\\makefile";
+	// Python Copy Makefile
 	/*
-	std::ofstream oMakeFilea(oMakePath, std::ios::out);
-	oMakeFilea.close();
+	set path=%1
+	set name=%2
+
+	cd /..
+	call C:\Users\alexa\Anaconda3\Scripts\activate.bat C:\Users\alexa\Anaconda3
+	cd C:\Users\alexa\Desktop\alillevangbech\leetcode
+	call python fMakefile.py %2
+	exit
+	*/
+	std::ofstream batch;
+	std::string batname = ExePath() + "\\" + "conda.bat";
+    batch.open(batname, std::ios::out);
+
+    batch <<"@echo OFF\n";
+    batch <<"cd /..\n";
+	batch <<"call C:\\Users\\alexa\\Anaconda3\\Scripts\\activate.bat C:\\Users\\alexa\\Anaconda3\n";
+    batch <<"cd C:\\Users\\alexa\\Desktop\\alillevangbech\\leetcode\n";
+    batch <<"call python fMakefile.py ";
+	batch <<lcname;
+	std::cout << "call python fMakefile.py " + lcname << std::endl;
+    batch.close();
+
+    if (fexists(batname))
+    {
+		int i;
+		std::string p = "/cygdrive/c/Users/alexa/Desktop/alillevangbech/leetcode/template/conda.bat";
+        system((p).c_str());
+        std::cout <<"Starting Batch File...\n";
+    }
 	
-	// Delete makefile
-	if(remove(oMakePath.c_str()) != 0)
-	{
-		std::cout << "Error deleting file" << std::endl;
-		assert(false);
-	}*/
-	
-	
-	
+	/*
 	// Write correct output
 	std::ifstream iMakeFile(iMakePath);
 	std::ofstream oMakeFile(oMakePath, std::ios::out);
@@ -103,11 +133,8 @@ int main(int argc, const char* argv[])
 				int find = line.find(name);
 				line.replace(find,len,lcname);
 			}
-			oMakeFile << line;
+			oMakeFile << line.c_str();
 		}
-		oMakeFile << std::endl;
-		oMakeFile.close();
-		iMakeFile.close();
 	}
 	std::cout << "Finished" << std::endl;
 	// Optional: Create easy way to upload to github
@@ -115,5 +142,7 @@ int main(int argc, const char* argv[])
 	return 0;
 	//const char b = argv[1];
 	//std::cout << strlen(b) << std::endl;
+	*/
+
 }
 // End

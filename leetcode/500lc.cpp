@@ -1,2 +1,2 @@
-/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 
+/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 500
 */#include <iostream>class Solution {public:};/* Testing */int main(){	std::cout << "hello world" << std::endl;}
