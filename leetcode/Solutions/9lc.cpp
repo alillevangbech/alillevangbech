@@ -1,0 +1,2 @@
+/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 9
+*/#include <iostream>class Solution {public:    bool isPalindrome(int x)	{        if (x < 0)            return false;                long long y = x;        long long rev = 0;        while (y)        {            rev = rev*10 + y%10;            y /= 10;        }              if (rev == x)            return true;        else            return false;    }};/* Testing */int main(){}
