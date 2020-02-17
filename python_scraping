@@ -3,3 +3,26 @@ https://docs.python.org/3/howto/urllib2.html
 http://jkorpela.fi/http.html
 https://stackoverflow.com/questions/52633697/selenium-python-how-to-capture-network-traffics-response
 https://stackoverflow.com/questions/26517200/dump-all-network-requests-and-responses-in-python
+
+from browsermobproxy import Server
+from selenium import webdriver
+import os
+import json
+import urlparse
+
+server = Server("path/to/browsermob-proxy")
+server.start()
+proxy = server.create_proxy()
+
+chromedriver = "path/to/chromedriver"
+os.environ["webdriver.chrome.driver"] = chromedriver
+url = urlparse.urlparse (proxy.proxy).path
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--proxy-server={0}".format(url))
+driver = webdriver.Chrome(chromedriver,chrome_options =chrome_options)
+proxy.new_har("http://stackoverflow.com", options={'captureHeaders': True})
+driver.get("http://stackoverflow.com")    
+result = json.dumps(proxy.har, ensure_ascii=False)
+print result
+proxy.stop()    
+driver.quit()
