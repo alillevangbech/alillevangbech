@@ -3,7 +3,7 @@ https://docs.python.org/3/howto/urllib2.html
 http://jkorpela.fi/http.html
 https://stackoverflow.com/questions/52633697/selenium-python-how-to-capture-network-traffics-response
 https://stackoverflow.com/questions/26517200/dump-all-network-requests-and-responses-in-python
-
+https://www.youtube.com/watch?v=wfWxdh-_k_4
 from browsermobproxy import Server
 from selenium import webdriver
 import os
