@@ -26,3 +26,5 @@ result = json.dumps(proxy.har, ensure_ascii=False)
 print result
 proxy.stop()    
 driver.quit()
+
+https://medium.com/botfuel/how-to-expose-a-local-development-server-to-the-internet-c31532d741cc
