@@ -29,3 +29,18 @@ driver.quit()
 
 https://medium.com/botfuel/how-to-expose-a-local-development-server-to-the-internet-c31532d741cc
 https://helpdeskgeek.com/networking/configure-router-for-remote-desktop/
+
+[client]
+port=3306
+
+[mysqld]
+bind_address=0.0.0.0
+port=3306
+key_buffer_size=16M
+max_allowed_packet=128M
+basedir="C:\\MySQL"
+datadir="C:\\MySQL\\data"
+log-error="DESKTOP-1GE9DLC.err"
+
+[mysqldump]
+quick
