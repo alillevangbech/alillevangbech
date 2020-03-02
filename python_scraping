@@ -44,3 +44,16 @@ log-error="DESKTOP-1GE9DLC.err"
 
 [mysqldump]
 quick
+
+
+CREATE TABLE `raw_nasdaq_apa` (
+  `AUTO_ID` int NOT NULL AUTO_INCREMENT,
+  `PUBLICATION_TIME` datetime DEFAULT NULL,
+  `AGREEMENT_TIME_AND_DATE` datetime DEFAULT NULL,
+  `ISIN` varchar(12) DEFAULT NULL,
+  `TRADE_NAME` varchar(50) DEFAULT NULL,
+  `TRADE_TYPE` varchar(50) DEFAULT NULL,
+  `PRICE` double DEFAULT NULL,
+  `VOLUME` double DEFAULT NULL,
+  PRIMARY KEY (`AUTO_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
