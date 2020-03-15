@@ -2,7 +2,7 @@ import os,sys
 import shutil
 import fileinput
 
-src = os.getcwd() + "\\template\\makefile"
+src = os.getcwd() + "\\template\\makefile.txt"
 dest = os.getcwd() + "\\makefile"
 
 shutil.copy(src, dest)

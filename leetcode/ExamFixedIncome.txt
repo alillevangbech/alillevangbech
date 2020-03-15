@@ -13,6 +13,7 @@
   - Structure, Pricing,  what are you betting on. 
       - FRA's
       - Futures
+	  - Convexity Bias
       - Swaps
 
 
@@ -59,3 +60,6 @@
   - End users
 
 8. Greeks, Vol Skews and the SABR Model
+ - Delta, Gamma, Vega, Theta
+ - Vol Skews
+ - SABR model and why we use it

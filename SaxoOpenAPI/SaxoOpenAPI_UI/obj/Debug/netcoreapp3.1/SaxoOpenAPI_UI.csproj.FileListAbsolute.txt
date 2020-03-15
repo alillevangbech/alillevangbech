@@ -1,0 +1,17 @@
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.exe
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.deps.json
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.runtimeconfig.json
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.runtimeconfig.dev.json
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.dll
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\SaxoOpenAPI_UI.pdb
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\saxoOpenAPI_Clib.dll
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\saxoOpenAPI_Clib.pdb
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.csprojAssemblyReference.cache
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.AssemblyInfoInputs.cache
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.AssemblyInfo.cs
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.csproj.CopyComplete
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.dll
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\obj\Debug\netcoreapp3.1\SaxoOpenAPI_UI.pdb
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\alexa\Desktop\saxo\SaxoOpenAPI_UI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
