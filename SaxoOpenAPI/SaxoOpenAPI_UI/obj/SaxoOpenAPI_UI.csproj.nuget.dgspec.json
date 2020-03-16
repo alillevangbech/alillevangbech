@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Desktop\\saxo\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj": {}
+    "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj": {
+    "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj",
         "projectName": "saxoOpenAPI_Clib",
-        "projectPath": "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj",
+        "projectPath": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[5.2.7, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -71,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\alexa\\Desktop\\saxo\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj": {
+    "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\saxo\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj",
         "projectName": "SaxoOpenAPI_UI",
-        "projectPath": "C:\\Users\\alexa\\Desktop\\saxo\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj",
+        "projectPath": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\SaxoOpenAPI_UI\\SaxoOpenAPI_UI.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Desktop\\saxo\\SaxoOpenAPI_UI\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\SaxoOpenAPI_UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -98,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj": {
-                "projectPath": "C:\\Users\\alexa\\Desktop\\saxo\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj"
+              "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj": {
+                "projectPath": "C:\\Users\\alexa\\Desktop\\alillevangbech\\SaxoOpenAPI\\saxoOpenAPI_CLib\\saxoOpenAPI_Clib.csproj"
               }
             }
           }

@@ -18,9 +18,10 @@ namespace SaxoOpenAPI_UI
     {
         private static async void LoadAccountInfo()
         {
-            var acc = await TradingProcessor.LoadAccount();
+            var acc = await TradingProcessor.GET_AccountInfo();
 
             System.Console.WriteLine($"UserKey: {acc.UserKey}");
+            System.Console.WriteLine($"ClientKey: {acc.ClientKey}");
             System.Console.WriteLine($"Name: {acc.Name}");
             System.Console.WriteLine($"LastLoginStatus: {acc.LastLoginStatus}");
             System.Console.WriteLine($"UserId: {acc.UserId}");
