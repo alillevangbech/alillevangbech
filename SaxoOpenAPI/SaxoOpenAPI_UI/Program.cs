@@ -33,11 +33,20 @@ namespace SaxoOpenAPI_UI
             }
             System.Console.WriteLine("#######");
         }
+
+        private static async void PlaceOrder()
+        {
+            var ord = await TradingProcessor.POST_Order();
+
+            System.Console.WriteLine($"Order id: {ord.OrderId}");
+        }
+
         static void Main(string[] args)
         {
             ApiHelper.Initialize();
             LoadAccountInfo();
-            System.Console.ReadKey();
+            PlaceOrder();
+            System.Console.Read();
         }
     }
 }
