@@ -35,7 +35,7 @@ namespace saxoOpenAPI_CLib
                 BuySell = "Buy",
                 AssetType = "FxSpot",
                 Amount = 500,
-                OrderPrice = 5.6,
+                OrderPrice = 7,
                 OrderType = "Limit",
                 OrderRelation = "StandAlone",
                 ManuelOrder = true,
@@ -55,14 +55,14 @@ namespace saxoOpenAPI_CLib
 
             using (HttpResponseMessage response = await ApiHelper.ApiClient.PostAsync(url, httpContent))
             {
-                if (response.IsSuccessStatusCode)
+                try
                 {
                     Order order_response = await response.Content.ReadAsAsync<Order>();
                     return order_response;
                 }
-                else
+                catch (System.Exception e)
                 {
-                    throw new Exception(response.ReasonPhrase);
+                    throw e;
                 }
             }
         }
