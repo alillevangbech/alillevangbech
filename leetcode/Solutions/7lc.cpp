@@ -1,2 +1,0 @@
-/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 7
-*/#include <iostream>#include <math.h>class Solution {public:    int reverse(int x)    {        long long res = 0;        while (x)        {            res = res*10 + x%10;            x /= 10;        }        return ((pow(-2,31) <= res && pow(2,31) >= res)) ? res : 0;    }};/* Testing */int main(){}

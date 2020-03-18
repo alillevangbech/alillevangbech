@@ -1,2 +1,0 @@
-/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 66
-*/#include <iostream>#include <vector>class Solution {public:    std::vector<int> plusOne(std::vector<int>& digits) {                if (digits.back() != 9)        {            digits.back()+1;            return digits;          }                int temp;        for (int i = digits.size()-1; i >= 0; i--)        {            if (digits[i] == 9 && i != 0)            {                digits[i-1]++;            }        }      }};/* Testing */int main(){}
