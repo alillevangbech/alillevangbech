@@ -2,6 +2,8 @@
 using System.Net;
 using saxoOpenAPI_CLib;
 using System.Threading.Tasks;
+using System.Reflection;
+using SaxoServiceGroupsModels;
 
 
 /*
@@ -16,6 +18,7 @@ namespace SaxoOpenAPI_UI
 {
     class Program
     {
+        
         private static async void LoadAccountInfo()
         {
             var acc = await TradingProcessor.GET_AccountInfo();
@@ -41,10 +44,15 @@ namespace SaxoOpenAPI_UI
             System.Console.WriteLine($"Order id: {ord.OrderId}");
         }
 
+        private static async void test<T>() where T : struct
+        {
+            
+        }
+
         static void Main(string[] args)
         {
             ApiHelper.Initialize();
-            LoadAccountInfo();
+            //LoadAccountInfo();
             PlaceOrder();
             System.Console.Read();
         }

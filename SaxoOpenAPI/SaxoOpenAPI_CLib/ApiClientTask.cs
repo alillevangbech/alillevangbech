@@ -4,11 +4,37 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SaxoServiceGroupsModels;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace saxoOpenAPI_CLib
 {
     public static class TradingProcessor
     {
+        public static async Task<T> GetRequest<T>(string url) where T : struct
+        {
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    T data = await response.Content.ReadAsAsync<T>();
+                    return data;
+                }
+                else
+                {
+                    ErrorModel error_response = await response.Content.ReadAsAsync<ErrorModel>();
+                    error_response.PrintError();
+                    throw new Exception(response.ReasonPhrase);
+                }
+            } 
+
+        }
+
+
+
+
+
+
         public static async Task<AccountInfoModel> GET_AccountInfo()
         {
             string url = "https://gateway.saxobank.com/sim/openapi/port/v1/users/me";
@@ -21,6 +47,8 @@ namespace saxoOpenAPI_CLib
                 }
                 else
                 {
+                    ErrorModel error_response = await response.Content.ReadAsAsync<ErrorModel>();
+                    error_response.PrintError();
                     throw new Exception(response.ReasonPhrase);
                 }
             }
@@ -55,15 +83,20 @@ namespace saxoOpenAPI_CLib
 
             using (HttpResponseMessage response = await ApiHelper.ApiClient.PostAsync(url, httpContent))
             {
-                try
+
+                if (response.IsSuccessStatusCode)
                 {
-                    Order order_response = await response.Content.ReadAsAsync<Order>();
-                    return order_response;
+                        Order order_response = await response.Content.ReadAsAsync<Order>();
+                        return order_response;
                 }
-                catch (System.Exception e)
+                else
                 {
-                    throw e;
+                    ErrorModel error_response = await response.Content.ReadAsAsync<ErrorModel>();
+                    error_response.PrintError();
+                    throw new Exception(response.ReasonPhrase);
                 }
+
+
             }
         }
 
