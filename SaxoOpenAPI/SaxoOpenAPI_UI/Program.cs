@@ -40,8 +40,7 @@ namespace SaxoOpenAPI_UI
         private static async void PlaceOrder()
         {
             var ord = await TradingProcessor.POST_Order();
-
-            System.Console.WriteLine($"Order id: {ord.OrderId}");
+            System.Console.WriteLine($"OrderID: {ord.OrderId}");
         }
 
         private static async void test<T>() where T : struct
