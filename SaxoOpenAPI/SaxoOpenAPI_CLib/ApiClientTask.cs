@@ -1,11 +1,7 @@
 using System;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using SaxoServiceGroupsModels;
-using System.Collections.Generic;
-using System.Reflection;
 
 namespace saxoOpenAPI_CLib
 {
@@ -30,10 +26,56 @@ namespace saxoOpenAPI_CLib
 
         }
 
+        public static async Task<T> PostRequest<T>(string url, HttpContent body) where T : struct
+        {
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.PostAsync(url, body))
+            {
+
+                if (response.IsSuccessStatusCode)
+                {
+                        T data = await response.Content.ReadAsAsync<T>();
+                        return data;
+                }
+                else
+                {
+                    ErrorModel error_response = await response.Content.ReadAsAsync<ErrorModel>();
+                    error_response.PrintError();
+                    throw new Exception(response.ReasonPhrase);
+                }
+
+
+            }
+        }
+    }
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
         public static async Task<AccountInfoModel> GET_AccountInfo()
         {
@@ -100,9 +142,6 @@ namespace saxoOpenAPI_CLib
             }
         }
 
-
-
-
         public static async Task<AccountInfoModel> GET_AccountValue()
         {
             string url = "https://gateway.saxobank.com/sim/openapi/hist/v3/accountValues/{ClientKey}/?MockDataId={MockDataId}";
@@ -119,5 +158,6 @@ namespace saxoOpenAPI_CLib
                 }
             }
         }
-    }
-}
+
+*/
+        

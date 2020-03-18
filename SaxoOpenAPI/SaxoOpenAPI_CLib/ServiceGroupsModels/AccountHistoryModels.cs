@@ -8,7 +8,6 @@ namespace SaxoServiceGroupsModels
         GET
         URL: https://gateway.saxobank.com/sim/openapi/hist/v1/users/me
         */
-        
         public string ClientKey {get; set;}
         public string Culture {get;set;}
         public string Language {get;set;}
