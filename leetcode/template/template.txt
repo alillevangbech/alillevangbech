@@ -1,0 +1,19 @@
+/*
+* Author: Alexander Bech
+* Leetcode Problem Solution
+* Leetcode ID:
+*/
+#include <iostream>
+
+class Solution {
+public:
+	Solution(){};
+};
+
+
+/* Testing */
+int main()
+{
+	Solution sltn;
+}
+

@@ -1,0 +1,65 @@
+1. Basic Interest Rate Concepts
+  - Day Rules
+  - Day Count
+  - Schedules
+  - Zero coupon bonds and Zero Coupon Rates
+  - Compounding
+  - The Yield Curve
+  - Spot vs Forwards - important - show arbritrage argument and mention risk neutral valuation gives the same.
+  - Libor Rates
+  - Libor History and the new concepts.
+  
+2. Swaps, FRAs and Futures
+  - Structure, Pricing,  what are you betting on. 
+      - FRA's
+      - Futures
+	  - Convexity Bias
+      - Swaps
+
+
+3. Curve Calibration and Risk Management
+  - Formal Calibration problem
+  - Linear, Log-Linear, Hermite
+  - How to calibrate the curve -> quick explantion
+  - Risk - what is it (bumping basis points and repricing)
+  - Model rate delta vectors
+  - Market rate delta vectors
+
+4. FX Products
+  - Stucture, Pricing, what are you betting on. (linear products)
+      - FX Forwards
+      - FX Swaps
+      - Cross Currency Swaps
+  - Covered Interest Rate Parity
+  - What Drives CCS spreads?
+  - FX options (optional)
+
+5. Dual Curves
+  - Why dual curves
+  - How to pin down both curves
+  - Driving CCS spreads
+  - Caluculating risk in dual curve setup
+  - Understanding delta vectors in dual curve setup
+  
+6. Option Trading Basics
+  - What is an option (European, American, Bermuda)
+  - Option payoff (Focus european)
+  - Black-Scholes
+  - Gamma/Theta trading (draw)
+  - Volatility in option trading Historical/Implied
+  - Options as implied leverage
+
+7. Caps, Floors and Swaptions
+  - What is an option / Option payoff
+  - Caplet
+    - Structure, priced in black-scholes
+    - Caps (Portfolio of caplets)
+  - Floorlets (Structure, priced via PCP)
+  - Swaptions - WHat is it
+  - ATMF
+  - End users
+
+8. Greeks, Vol Skews and the SABR Model
+ - Delta, Gamma, Vega, Theta
+ - Vol Skews
+ - SABR model and why we use it
