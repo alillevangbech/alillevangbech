@@ -1,2 +1,0 @@
-/** Author: Alexander Bech* Leetcode Problem Solution* Leetcode ID: 35
-*/#include <iostream>#include <vector>class Solution {public:    int searchInsert(std::vector<int>& nums, int target) {        if (nums.empty())        return 0;            for (int i = 0; i < nums.size(); i++)    {        if(nums[i] >= target)            return i;    }    return nums.size();            }};/* Testing */int main(){}

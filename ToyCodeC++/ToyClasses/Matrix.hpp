@@ -83,11 +83,6 @@ Matrix<T>::Matrix(const Matrix& otherMatrix)
 	}
 }
 
-
-
-
-
-
 template <class T>
 Matrix<T>::Matrix(int numRows, int numCols)
 {

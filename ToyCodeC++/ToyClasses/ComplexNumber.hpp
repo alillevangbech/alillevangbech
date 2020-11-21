@@ -20,7 +20,6 @@ public:
    ComplexNumber operator-(const ComplexNumber& z) const;
    friend std::ostream& operator<<(std::ostream& output, 
                                    const ComplexNumber& z);
-	//Exercise prototypes
 	double GetRealPart() const;
 	double GetImaginaryPart() const;
 	friend double RealPart(const ComplexNumber& z);
@@ -36,6 +35,5 @@ public:
 
 
 #endif
-//Code from Chapter06.tex line 746 save as ComplexNumber.hpp
 
 

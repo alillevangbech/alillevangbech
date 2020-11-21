@@ -199,11 +199,6 @@ SparseVector<T>& SparseVector<T>::operator-= (SparseVector<T> const& x)
 	
 }
 
-
-
-
-
-
 // computes z= x+y, equivalent to z=x, z+=y
 template<class T>
 SparseVector<T> operator+(SparseVector<T> const& x, SparseVector<T> const& y)
@@ -217,9 +212,6 @@ SparseVector<T> operator+(SparseVector<T> const& x, SparseVector<T> const& y)
 
 }
 
-
-
-
 // computes z= x-y, equivalent to z=x, z-=y
 template<class T>
 SparseVector<T> operator-(SparseVector<T> const& x, SparseVector<T> const& y)
@@ -232,7 +224,6 @@ SparseVector<T> operator-(SparseVector<T> const& x, SparseVector<T> const& y)
 	return z;
 
 }
-
 
 // computes the matrix-vector product of a dense matrix and sparse vector z=Ax.
 // The result is a dense vector.
@@ -253,11 +244,6 @@ Vector<T> operator* (Matrix<T> const& A, SparseVector<T> const& x)
 	
 }
 
-	
-	
-	
-
-
 
 // computes the matrix-vector product of a dense matrix and sparse vector z=x^TA.
 // The result is a dense vector.
@@ -276,8 +262,6 @@ Vector<T> operator* (SparseVector<T> const& x, Matrix<T> const& A)
 	return z;
 	
 }
-
-
 
 
 

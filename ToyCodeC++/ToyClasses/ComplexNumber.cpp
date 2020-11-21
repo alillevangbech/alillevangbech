@@ -170,18 +170,6 @@ ComplexNumber ComplexNumber::operator/(const ComplexNumber& z) const
    return w;
 }
 
-/*
-
-int main()
-{
-	ComplexNumber z1(1,2);
-	
-	z1.SetConjugate();
-	
-	std::cout << z1.CalculateConjugate() << "\n";
-}
-
-*/
 
 
 
